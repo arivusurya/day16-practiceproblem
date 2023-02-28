@@ -4,9 +4,14 @@ namespace Algoriths{
     public class Program{
         public static void Main(string[] args)
         {
-            string[] words = {"hello","world","mycomputer","notworking","notthis"};
-            BinarySearch bs = new BinarySearch();
-            bs.Search(words,"notworking");
+          int[] list = {5,1,2,4};
+          BubbleSort bs =new BubbleSort();
+          Console.WriteLine("Before Sorting");
+          foreach(int i in list){
+            Console.WriteLine("{0} ",i);
+          }
+          Console.WriteLine("After sortig");
+          bs.sort(list);
 
         }
     }
