@@ -1,23 +1,29 @@
-public class BubbleSort{
+public class InsertionSort{
 
-    public void sort(int[] list){
+    public void sort(int[] arr){
+    int n = arr.Length;
 
-        
-      
-        for(int i=0;i<list.Length-1;i++){
-            for(int j =0;j<list.Length-1;j++){
-                if(list[j]>list[j+1]){
-                   int temp = list[j];
-                   list[j] = list[j+1];
-                   list[j+1] = temp;
-                }
+        for (int i = 1; i < n; i++)
+        {
+            int key = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && arr[j] > key)
+            {
+                arr[j + 1] = arr[j];
+                j--;
             }
+
+            arr[j + 1] = key;
         }
-        foreach(int item in list){
-            Console.WriteLine("{0} ",item);
+
+        foreach (int i in arr){
+            Console.WriteLine(i);
         }
     }
+
 }
+
 
       
 

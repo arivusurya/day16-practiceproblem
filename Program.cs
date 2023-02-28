@@ -4,15 +4,15 @@ namespace Algoriths{
     public class Program{
         public static void Main(string[] args)
         {
-          int[] list = {5,1,2,4};
-          BubbleSort bs =new BubbleSort();
-          Console.WriteLine("Before Sorting");
-          foreach(int i in list){
-            Console.WriteLine("{0} ",i);
-          }
-          Console.WriteLine("After sortig");
-          bs.sort(list);
+         int[] arr = {1,3,4,2,9,7};
+         InsertionSort Is = new InsertionSort();
+         Console.WriteLine("Before Sorting");
+         foreach(int i in arr){
+            Console.WriteLine(i);
+         }
 
+         Console.WriteLine("After sorting");
+         Is.sort(arr);
         }
     }
 
