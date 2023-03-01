@@ -4,8 +4,8 @@ namespace Algoriths{
     public class Program{
         public static void Main(string[] args)
         {
-            Anagram ag = new Anagram();
-            ag.checkAnagran("heart","earth");
+            PrimeNumber pm = new PrimeNumber();
+            pm.PrintPrime(1,1000);
         }
     }
 
